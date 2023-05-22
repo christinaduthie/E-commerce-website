@@ -2,8 +2,6 @@ import React from 'react'
 import './header.css'
 import { NavLink } from 'react-router-dom'
 
-//check if used else delete it
-import { motion } from 'framer-motion'
 
 import logo from '../../assets/images/eco-logo.png'
 import userIcon from '../../assets/images/user-icon.png'
