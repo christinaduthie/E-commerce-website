@@ -6,6 +6,8 @@ import heroImg from '../assets/images/hero-img.jpg'
 import Helmet from '../components/Helmet/Helmet';
 import '../styles/home.css';
 import Services from '../services/Services';
+import ProductsList from '../components/UI/ProductsList';
+
 const Home = () => {
     const year = new Date().getFullYear()
     return < Helmet title={"Home"} >
@@ -35,6 +37,7 @@ const Home = () => {
                     <Col lg='12' className='text-center'>
                         <h2 className='section__title'>Trending Products</h2>
                     </Col>
+                    <ProductsList />
                 </Row>
             </Container>
         </section>
