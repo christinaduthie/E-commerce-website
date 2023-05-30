@@ -1,6 +1,6 @@
-import productImg01 from "../images/double-sofa-01.png";
-import productImg02 from "../images/double-sofa-02.png";
-import productImg03 from "../images/double-sofa-03.png";
+import productImg01 from "../images/fiction-book-01.jpg";
+import productImg02 from "../images/fiction-book-02.jpg";
+import productImg03 from "../images/fiction-book-03.jpg";
 
 import productImg04 from "../images/single-sofa-01.jpg";
 import productImg05 from "../images/single-sofa-02.jpg";
@@ -31,10 +31,10 @@ import productImg25 from "../images/wireless-03.png";
 const products = [
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "The Handmaid's Tale book ",
     imgUrl: productImg01,
-    category: "sofa",
-    price: 193,
+    category: "Fiction",
+    price: 19,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -50,10 +50,10 @@ const products = [
 
   {
     id: "02",
-    productName: "Rivet Bigelow Modern ",
+    productName: "The Great Gatsby ",
     imgUrl: productImg02,
-    category: "sofa",
-    price: 253,
+    category: "Fiction",
+    price: 25,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -73,10 +73,10 @@ const products = [
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "Nineteen Eighty-Four",
     imgUrl: productImg03,
-    category: "sofa",
-    price: 173,
+    category: "Fiction",
+    price: 17,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -95,9 +95,9 @@ const products = [
   },
   {
     id: "26",
-    productName: "Rivet Bigelow Modern ",
+    productName: "The Great Gatsby ",
     imgUrl: productImg02,
-    category: "sofa",
+    category: "Fiction",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
