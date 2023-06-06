@@ -11,12 +11,11 @@ const Footer = () => {
             <Row>
                 <Col lg="4">
                     <div className='logo'>
-                        <img src={logo} alt='logo' />
                         <div>
-                            <h1>Readers's Den</h1>
+                            <h1 className='text-white'>Readers's Den</h1>
                         </div>
                     </div>
-                    <p className='footer__text mt-4'>Esse dolor cillum ipsum tempor irure ad et est. Veniam culpa esse veniam sit aliqua do consectetur et ipsum Lorem velit pariatur in. Labore amet ipsum dolore mollit aliquip ipsum duis incididunt non deserunt nostrud laboris.</p>
+                    <p className='footer__text mt-4'>Esse dolor cillum ipsum tempor irure ad et est. Veniam culpa esse veniam sit aliqua do consectetur et ipsum Lorem velit pariatur in. Labore amet ipsum dolore mollit aliquip.</p>
                 </Col>
                 <Col lg="3">
                     <div className='footer__quick-links'>
@@ -75,16 +74,16 @@ const Footer = () => {
                 <Col lg="3">
                     <div className='footer__quick-links'>
                         <h4 className='quick__links-title'>Contact</h4>
-                        <ListGroup className='mb-3'>
-                            <ListGroupItem className='ps-0 border-0'>
+                        <ListGroup className='footer__contact'>
+                            <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>
                                 <span><i class="ri-map-pin-line"></i></span>
                                 <p>Fatima Nagar, Pune, India</p>
                             </ListGroupItem>
-                            <ListGroupItem className='ps-0 border-0'>
+                            <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>
                                 <span><i class="ri-phone-line"></i></span>
                                 <p>+91 9999999999</p>
                             </ListGroupItem>
-                            <ListGroupItem className='ps-0 border-0'>
+                            <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>
                                 <span><i class="ri-mail-line"></i></span>
                                 <p>qwerty@gmail.com</p>
                             </ListGroupItem>
