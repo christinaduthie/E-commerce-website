@@ -21,3 +21,9 @@
 .footer__contact li{
     color: #ffffffc8;
 }
+.footer__contact li p{
+    color: #ffffffc8;
+}
+.footer__copyright{
+    text-align: center;
+}
