@@ -83,7 +83,7 @@ const Header = () => {
                         </span>
                         <span><img src={userIcon} alt='User Icon' /></span>
                         <div className='mobile__menu'>
-                            <span onClick={menuToggle}>
+                            <span>
                                 <i class="ri-menu-line"></i>
                             </span>
                         </div>
