@@ -29,6 +29,9 @@
     .hero__content h2{
         font-size: 2rem;
     }
+    .section__title{
+        font-size: 1.6rem;
+    }
 }
 @media only screen and (max-width:768px){
     .hero__content h2{
@@ -39,6 +42,9 @@
     }
     .buy__btn{
         font-size: 0.9rem;
+    }
+    .section__title{
+        font-size: 1.4rem;
     }
 }
 @media only screen and (max-width:576px){
