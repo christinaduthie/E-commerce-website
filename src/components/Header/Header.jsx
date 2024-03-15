@@ -4,6 +4,7 @@ import "./header.css";
 import logo from "../../assets/images/eco-logo.png";
 import userIcon from "../../assets/images/user-icon.png";
 import { Container, Row } from "reactstrap";
+import { motion } from "framer-motion";
 
 const nav__links = [
   {
@@ -51,12 +52,15 @@ const Header = () => {
             <div className="nav__icons">
               <span className="fav__icon">
                 <i class="ri-heart-line"></i>
+                <span className="badge">1</span>
               </span>
               <span className="cart__icon">
                 <i class="ri-shopping-bag-line"></i>
+                <span className="badge">1</span>
+
               </span>
               <span>
-                <img src={userIcon} alt="Profile Pic" />
+                <motion.img whileTap={{scale:1.3}} src={userIcon} alt="Profile Pic" />
               </span>
             </div>
 
