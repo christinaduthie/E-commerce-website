@@ -1,56 +1,75 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import './header.css'
-import logo from '../../assets/images/eco-logo.png'
-import userIcon from '../../assets/images/user-icon.png'
-import { Container,Row } from 'reactstrap'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./header.css";
+import logo from "../../assets/images/eco-logo.png";
+import userIcon from "../../assets/images/user-icon.png";
+import { Container, Row } from "reactstrap";
+
+const nav__links = [
+  {
+    path: "home",
+    display: "Home",
+  },
+  {
+    path: "shop",
+    display: "Shop",
+  },
+  {
+    path: "cart",
+    display: "Cart",
+  },
+];
 
 const Header = () => {
-  return <header className="header">
-    <Container>
-      <Row>
-        <div className="nav__wrapper">
-          <div className="logo">
-            <img src={logo} alt="logo" />
-            <div>
-              <h1>Reader's Den</h1>
-              <p>Embrace Your Journey</p>
+  return (
+    <header className="header">
+      <Container>
+        <Row>
+          <div className="nav__wrapper">
+            <div className="logo">
+              <img src={logo} alt="logo" />
+              <div>
+                <h1>Reader's Den</h1>
+              </div>
+            </div>
+            <div className="navigation">
+              <ul className="menu">
+                {nav__links.map((item, index) => (
+                  <li className="nav__item" key={index}>
+                    <NavLink
+                      to={item.path}
+                      className={(navClass) =>
+                        navClass.isActive ? "nav__active" : ""
+                      }
+                      >
+                      {item.display}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="nav__icons">
+              <span className="fav__icon">
+                <i class="ri-heart-line"></i>
+              </span>
+              <span className="cart__icon">
+                <i class="ri-shopping-bag-line"></i>
+              </span>
+              <span>
+                <img src={userIcon} alt="Profile Pic" />
+              </span>
+            </div>
+
+            <div className="mobile__menu">
+              <span>
+                <i class="ri-menu-line"></i>
+              </span>
             </div>
           </div>
-          <div className="navigation">
-            <ul className="menu">
-              <li className="nav__item">
-                <NavLink to='home'>
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav__item">
-                <NavLink to='shop'>
-                  Shop
-                </NavLink>
-              </li>
-              <li className="nav__item">
-                <NavLink to='cart'>
-                  Cart
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-          <div className="nav__icons">
-            <span className="fav__icon"><i class="ri-heart-line"></i></span>
-            <span className="cart__icon"><i class="ri-shopping-bag-line"></i></span>
-            <span><img src={userIcon} alt="Profile Pic" /></span>
-          </div>
+        </Row>
+      </Container>
+    </header>
+  );
+};
 
-          <div className="mobile__menu">
-            <span>
-            <i class="ri-menu-line"></i>
-            </span>
-          </div>
-        </div>
-      </Row>
-    </Container>
-  </header>
-}
-
-export default Header
+export default Header;
